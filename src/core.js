@@ -39,6 +39,7 @@ import flatpickr from 'flatpickr'
 import Mandarin from 'flatpickr/dist/l10n/zh.js'
 import { initListener } from './controllers/listener';
 import { luckysheetextendData } from './global/extend.js';
+import { hideloading, showloading } from './global/loading.js';
 
 let luckysheet = {};
 
@@ -248,6 +249,9 @@ luckysheet.selectHightlightShow = selectHightlightShow;
 luckysheet.destroy = method.destroy;
 
 luckysheet.luckysheetextendData = luckysheetextendData;
+
+luckysheet.showLoadingProgress = showloading;
+luckysheet.hideLoadingProgress = hideloading;
 
 export {
     luckysheet
